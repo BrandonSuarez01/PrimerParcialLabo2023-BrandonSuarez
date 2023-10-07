@@ -1,0 +1,29 @@
+/*CSS TABLA:*/
+table{
+    border-collapse: collapse;
+}
+th{
+    text-transform: capitalize;
+    background-color: indianred;
+}
+th,td{
+    border: 1px solid black;
+    padding: 3px 5px;
+}
+td{
+    background-color: aliceblue;
+}
+.divTabla{
+    display: flex;
+    justify-content: center;
+}
+/**/
+body {
+    display: grid;
+    place-items: center;
+}
+
+.form-abm{
+    display: flex;
+    flex-direction: column;
+}

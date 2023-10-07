@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos-dos.css">
+    <title>Primer Parcial</title>
+</head>
+<body>
+    <form class="form-datos">
+        <h1>Form Datos</h1>
+        <div class="filter">
+            <label for="selection">Filtrar por:</label>
+            <select name="selection" id="select-filtro">
+                <option value="todos">Todos</option>
+                <option value="aereo">Aereo</option>
+                <option value="terrestre">Terrestre</option>
+            </select>
+        </div>
+        <div class="promedio-vel">
+            <label for="calculate">Promedio Velocidad Maxima:</label>
+            <input type="text" name="calculate" id="text-promedio">
+            <button type="submit" id="calcular-prom">Calcular</button>
+        </div>
+        <br>
+        <div class="table-container">
+            <label for="checkboxes">Mostrar Columnas: </label>
+            <div class="checkboxes">
+                <label for="id">Id:</label>
+                <input type="checkbox" name="" id="id" data-column="0" checked="true">
+                <label for="name">-Modelo:</label>
+                <input type="checkbox" name="" id="modelo" data-column="1" checked="true">
+                <label for="surname">-Año Fab:</label>
+                <input type="checkbox" name="" id="anioFab" data-column="2" checked="true">
+                <label for="age">-Vel Max:</label>
+                <input type="checkbox" name="" id="velMax" data-column="3" checked="true">
+                <label for="salary">-Cant Pue:</label>
+                <input type="checkbox" name="" id="cantPue" data-column="4" checked="true">
+                <label for="sales">-Cant Rue:</label>
+                <input type="checkbox" name="" id="cantRue" data-column="5" checked="true">
+                <label for="shopping">-Alt Max:</label>
+                <input type="checkbox" name="" id="altMax" data-column="6" checked="true">
+                <label for="phone">-Autonomia:</label>
+                <input type="checkbox" name="" id="autonomia" data-column="7" checked="true">
+            </div>
+            <br>
+            <div class="table" id="table"></div>
+        </div>
+    </form>
+
+    <div class="abm-container">
+        <h1>Formulario ABM</h1>
+        <form class="form-abm">
+            <label for="">Id:</label>
+            <input type="number" name="" id="input-id">
+            <label for="">Modelo:</label>
+            <input type="text" name="" id="input-modelo">
+            <label for="">Año Fabricacion:</label>
+            <input type="text" id="input-fab">
+            <label for="">Velocidad Maxima:</label>
+            <input type="text" name="" id="input-vel">
+            <label for="">Tipo:</label>
+            <select name="" id="select-tipo">
+                <option value="aereo">Aereo</option>
+                <option value="terrestre">Terrestre</option>
+            </select>
+            <label for="">Altura Maxima:</label>
+            <input type="text" name="" id="input-alt">
+            <label for="">Autonomia:</label>
+            <input type="text" name="" id="inpunt-auto">
+            <label for="">Cantidad Puertas:</label>
+            <input type="text" name="" id="input-cantPue">
+            <label for="">Cantidad Ruedas:</label>
+            <input type="text" name="" id="input-cantRue">
+            <button id="btnAgregar">Agregar</button>
+        </form>
+    </div>
+    
+
+</body>
+<script type="module" src="./js/app.js"></script>
+</html>
